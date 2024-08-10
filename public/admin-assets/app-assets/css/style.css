@@ -1,0 +1,16 @@
+/* For hide add subject dropdown */
+.dropdownhideid {
+  display: none;
+}
+
+.bookmark-wrapper {
+  display: none !important;
+}
+
+.content-wrapper {
+  margin-top: 1rem;
+}
+
+.dataTables_wrapper{
+  padding: 1rem 1rem 0rem;
+}

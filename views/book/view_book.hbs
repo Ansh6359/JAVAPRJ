@@ -1,0 +1,90 @@
+{{{header}}}
+{{!-- {{{sidebar}}} --}}
+<!-- BEGIN: Content-->
+<div class="app-content content ">
+  <div class="content-overlay"></div>
+  <div class="header-navbar-shadow"></div>
+  <div class="content-wrapper">
+    <div class="content-header row">
+      <div class="content-header-left col-md-9 col-12 mb-2">
+        <div class="row breadcrumbs-top">
+          <div class="col-12">
+            <h2 class="content-header-title float-left mb-0">Manage Book</h2>
+            <div class="breadcrumb-wrapper">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/home">Home</a>
+                </li>
+                <li class="breadcrumb-item active">Books</a>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-body">
+      <div class="col-lg-2 col-md-6 mb-1 mb-lg-0" style="margin-left: auto;">
+        <a href="/book/add"><button type="button" class="btn btn-primary btn-block">Add Books</button></a>
+      </div><br>
+      <!-- Basic table -->
+      <section id="basic-datatable">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <table id="table_id" class="table">
+                <thead align="center">
+                  <tr>
+                    <th>No</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Notes</th>
+                    <th>Favourite</th>
+                    <th>Image</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody align="center">
+                  {{#each items}}
+                  <tr>
+                    <th>{{ math @index "+" 1 }}</th>
+                    <th>{{ title }}</th>
+                    <th>{{ authors }}</th>
+                    <th>{{ genres }}</th>
+                    <th>{{ notes }}</th>
+                    <th>
+                      {{#if isFavourite}}
+                      Yes
+                      {{else}}
+                      No
+                      {{/if}}
+                    </th>
+                    <th>
+                      {{#if image}}
+                      <img src="../uploads/uploaded-books/{{ image }}" class="img-fluid rounded" height="55px" width="55px">
+                      {{/if}}
+                    </th>
+                    <th>
+                      <a href="/book/edit/{{ _id }}" class="btn btn-info btn-sm" data-toggle="tooltip"
+                        data-original-title="Edit"><i class="ficon" data-feather="edit"></i></a>
+                      <a href="/book/delete/{{ _id }}" data-toggle="tooltip" data-original-title="Delete"
+                        onclick="return confirm('Are you sure to delete this record ?');"
+                        class="btn btn-secondary btn-sm"><i class="ficon" data-feather="trash-2"></i></a>
+                    </th>
+                  </tr>
+                  {{/each}}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--/ Basic table -->
+
+    </div>
+  </div>
+</div>
+<!-- END: Content-->
+
+{{{footer}}}

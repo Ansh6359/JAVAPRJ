@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>My Book Vault</title>
+
+    <link rel="stylesheet" href="/front-assets/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/front-assets/assets/css/all.min.css">
+    <link rel="stylesheet" href="/front-assets/assets/css/animate.css">
+    <link rel="stylesheet" href="/front-assets/assets/css/odometer.css">
+    <link rel="stylesheet" href="/front-assets/assets/css/nice-select.css">
+    <link rel="stylesheet" href="/front-assets/assets/css/owl.min.css">
+    <link rel="stylesheet" href="/front-assets/assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="/front-assets/assets/css/flaticon.css">
+    <link rel="stylesheet" href="/front-assets/assets/css/main.css">
+
+    <link rel="shortcut icon" href="/admin-assets/app-assets/images/logo/book.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="all-sections oh">
+        <!-- ~~~ Loader & Go-Top ~~~ -->
+        <div class="overlayer"></div>
+        <div class="loader">
+            <div class="inner"></div>
+        </div>
+        <span class="go-top">
+            <i class="fas fa-angle-up"></i>
+        </span>
+        <!-- ~~~ Loader & Go-Top ~~~ -->
+
+        <!-- ~~~ Header Section ~~~ -->
+        <header>
+            <div class="custom-container">
+                <div class="header-area">
+                    <div class="logo">
+                        <a href="/">
+                            <img src="/admin-assets/app-assets/images/logo/book.png" width="50px" height="50px"
+                                alt="logo">
+                        </a>
+                    </div>
+                    <ul class="menu d-none d-lg-flex flex-wrap">
+                        <li>
+                            <a href="/login"><span>Sign In</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- ~~~ Header Section ~~~ -->
+
+        <section class="course-section pt-130 pb-130 section-bg oh pos-rel">
+
+            <div class="contpowerainer">
+                <div class="section-header">
+                    <h3 class="title">Discover the Dynamic World of My Book Vault</h3>
+                </div>
+                <div class="row justify-content-center px-2 mb-30-none">
+                    {{#each books}}
+                    <div class="col-xl-3 col-md-6 col-sm-10">
+                        <div class="course-item">
+                            <div class="thumb">
+                                <img src="{{ this }}" alt="book">
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
+
+                </div>
+        </section>
+
+        <!-- <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> -->
+        <script src="/front-assets/assets/js/jquery-3.3.1.min.js"></script>
+        <script src="/front-assets/assets/js/modernizr-3.6.0.min.js"></script>
+        <script src="/front-assets/assets/js/bootstrap.min.js"></script>
+        <script src="/front-assets/assets/js/isotope.pkgd.min.js"></script>
+        <script src="/front-assets/assets/js/magnific-popup.min.js"></script>
+        <script src="/front-assets/assets/js/wow.min.js"></script>
+        <script src="/front-assets/assets/js/odometer.min.js"></script>
+        <script src="/front-assets/assets/js/viewport.jquery.js"></script>
+        <script src="/front-assets/assets/js/nice-select.js"></script>
+        <script src="/front-assets/assets/js/owl.min.js"></script>
+        <script src="/front-assets/assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+{{{header}}}
+{{!-- {{{sidebar}}} --}}
+<!-- BEGIN: Content-->
+
+<style>
+  .login-bg{
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      filter: blur(2px);
+      opacity: 0.3;
+    }
+</style>
+<div class="app-content content">
+  <div class="content-overlay"></div>
+  <div class="header-navbar-shadow"></div>
+  <div class="content-wrapper">
+    <div class="content-header row">
+    </div>
+    <div class="content-body">
+      <img
+        src="/admin-assets/app-assets/images/pages/login-bg.webp"
+        class="login-bg"
+      />
+      <div
+        class="d-flex gap-2 flex-column justify-content-center align-items-center"
+      >
+        <h1 style="margin-top: 5rem;">Organize Your Personal Library with
+          MyBookVault</h1>
+        <h4>Easily manage your book collection, and discover new favorites.</h4>
+        <a class="d-flex align-items-center" href="/books"><button
+            type="button"
+            class="btn btn-primary mt-2"
+          >Add Books</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END: Content-->
+
+{{{footer}}}
